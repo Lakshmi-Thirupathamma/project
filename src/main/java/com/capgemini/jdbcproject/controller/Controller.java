@@ -172,11 +172,10 @@ public class Controller {
 							System.out.println("Press 6 to Get the Book Information");
 							System.out.println("Press 7 to Search the book by Id");
 							System.out.println("Press 8 to update the book");
-							System.out.println("Press 9 to check student book history");
-							System.out.println("Press 10 to check requests");
-							System.out.println("Press 11 to check issued books");
-							System.out.println("Press 12 to view users");
-							System.out.println("Press 13 to logout");
+							System.out.println("Press 9 to check requests");
+							System.out.println("Press 10 to check issued books");
+							System.out.println("Press 11 to view users");
+							System.out.println("Press 12 to logout");
 
 							int choice1 = scanner.nextInt();
 							switch (choice1) {
@@ -366,7 +365,7 @@ public class Controller {
 								}
 								break;
 
-							case 10:
+							case 9:
 								System.out.println(" Requests received are:");
 								try {
 									List<RequestBook> requests = service1.showRequests();
@@ -386,7 +385,7 @@ public class Controller {
 									System.err.println(e.getMessage());
 								}
 								break;
-							case 11:
+							case 10:
 								System.out.println("Issued Books are:");
 								try {
 									List<IssueStatus> issuedBooks = service1.showIssuedBooks();
@@ -406,7 +405,7 @@ public class Controller {
 									System.err.println(e.getMessage());
 								}
 								break;
-							case 12:
+							case 11:
 								System.out.println("Users are:");
 								try {
 									List<User> users = service1.showUsers();
@@ -431,7 +430,7 @@ public class Controller {
 								break;
 
 
-							case 13:
+							case 12:
 								doReg();
 
 							default:
